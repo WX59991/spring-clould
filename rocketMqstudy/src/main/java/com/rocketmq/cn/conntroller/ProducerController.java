@@ -16,7 +16,8 @@ public class ProducerController {
 
     @GetMapping("/send")
     public String send(String msg){
-        producer.sendMsg("wtest",msg);
+        //topic:Tag
+        producer.sendMsg("log_syn",msg);
         return "发送结束" ;
     }
 
@@ -26,7 +27,7 @@ public class ProducerController {
         user.setUsername(username);
         user.setSex(sex);
         user.setAge(age);
-        producer.sendUser("w_user_test",user);
+        producer.sendUser("log_syn",user);
         return "发送结束" ;
     }
 
@@ -34,7 +35,7 @@ public class ProducerController {
     public String sendJson(String msg){
         JSONObject json=new JSONObject();
         json.put("say",msg);
-        producer.sendJson("w_json_test",json);
+        producer.sendJson("log_syn",json);
         return "发送结束" ;
     }
 
