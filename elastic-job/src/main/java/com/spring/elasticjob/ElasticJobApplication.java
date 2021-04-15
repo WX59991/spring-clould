@@ -7,8 +7,6 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class ElasticJobApplication {
 
     public static void main(String[] args) {
-//        ClassPathXmlApplicationContext context=new ClassPathXmlApplicationContext("classpath:");
-//        context.start();
         SpringApplication.run(ElasticJobApplication.class, args);
         System.out.println("启动成功");
     }

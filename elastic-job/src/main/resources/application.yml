@@ -5,4 +5,9 @@ regCenter:
 myElasticJob:
   cron: 0/10 * * * * ?
   shardingTotalCount: 1
-  shardingItemParameters: 0=Chengdu0
+  shardingItemParameters: 0=Chengdu,1=beijing
+
+myDataflowJob:
+  cron: 0/10 * * * * ?
+  shardingTotalCount: 1
+  shardingItemParameters: 0=Chengdu,1=beijing
